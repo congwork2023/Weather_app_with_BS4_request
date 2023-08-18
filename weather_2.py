@@ -14,7 +14,7 @@ img=Image.open("Img\weather_logo.png")
 img=img.resize((150,150))
 
 #add Imamge into object
-img_Object =ImageTk.PhotoImage(img)
+img_Object =ImageTk.PhotoImage(img) 
 #create Lable and position of Lable by grid
 Label(window, image=img_Object, bg="white").grid(row=1,sticky="E")
 
@@ -38,7 +38,7 @@ def get_weather() :
 
 #Dưới đây là tạo gui trước và sau đó là áp dụng def get_weather đều có sự tính toán hết
 locationLabel=Label(window,font=("Calibri Bold",20),bg="white") #tạo nhãn cho các biến 
-locationLabel.grid(row=0,sticky="N", padx=100)
+locationLabel.grid(row=0,sticky="N", padx=100) #hiển thị text locationLabel
 temperatureLabel= Label(window,font=("Calibri Bold",70),bg="white")#như trên# Font lớn nhất 
 temperatureLabel.grid(row=1,sticky="W", padx=10)
 weatherPredictionLabel=Label(window,font=("Calibri Bold",50),bg="white")# như trên#
