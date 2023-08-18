@@ -1,1 +1,3 @@
 https://www.youtube.com/watch?v=xKukOMtPWwk
+https://app.diagrams.net/#G1Wg7J1e7tHEn3VyhDvRQE-M4iK4rPCSKX    
+# sơ đồ hoạt động của getWeather.

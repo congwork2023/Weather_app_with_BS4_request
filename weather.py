@@ -34,7 +34,6 @@ def getWeather():
     
 locationLabel = Label(master,font=("Calibri Bold",20),bg="white")
 locationLabel.grid(row=0,sticky="N", padx=100)
-
 temperatureLabel = Label(master,font=("Calibri Bold",70),bg="white")
 temperatureLabel.grid(row=1,sticky="W", padx=40)
 weatherPredictionLabel = Label(master,font=("Calibri bold", 51),bg="white")
