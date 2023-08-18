@@ -44,8 +44,5 @@ temperatureLabel.grid(row=1,sticky="W", padx=10)
 weatherPredictionLabel=Label(window,font=("Calibri Bold",50),bg="white")# như trên#
 weatherPredictionLabel.grid(row=2,sticky="W", padx=100)
 
-
-
-
-get_weather()
+get_weather() # tạo đối tượng sau khi tạo hàm phương thức
 window.mainloop() #run the window
