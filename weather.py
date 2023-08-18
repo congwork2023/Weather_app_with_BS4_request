@@ -12,9 +12,9 @@ master=Tk() # tạo cửa sổ window
 master.title("Weather App")
 master.config(bg="white") #
 
-img=Image.open("Img\weather_logo.png") #nằm trong module PIL
-img =img.resize((150,150))# NẰM TRONG PIL -> thay đổi kích thước ảnh
-img=ImageTk.PhotoImage(img) #add vào widget 
+img=Image.open("Img\weather_logo.png") #nằm trong module PIL có thể dùng thư mục thay toàn bộ đường dẫn dài
+img=img.resize((150,150))# NẰM TRONG PIL -> thay đổi kích thước ảnh
+img=ImageTk.PhotoImage(img) #add vào widget #có thể thay thế biến img bằng biến img2
 
 def getWeather():
     page = requests.get(url)
@@ -36,7 +36,7 @@ locationLabel.grid(row=0,sticky="N", padx=100)
 
 temperatureLabel = Label(master,font=("Calibri Bold",70),bg="white")
 temperatureLabel.grid(row=1,sticky="W", padx=40)
-Label(master, image=img, bg="white").grid(row=1,sticky="E") #######cái này để hiển thị logo image
+Label(master, image=img, bg="white").grid(row=1,sticky="E") #######cái này để hiển thị logo image có thể thay thể biến image=img2
 weatherPredictionLabel = Label(master,font=("Calibri bold", 51),bg="white")
 weatherPredictionLabel.grid(row=2, sticky="W",padx=40)
 
